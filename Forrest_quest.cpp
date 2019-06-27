@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <unistd.h>
+#include <cstdlib>
+
+
 
 using namespace std;
 
@@ -16,8 +20,13 @@ int main()
        cout << "/                                           \\  "<<endl;
        cout << " please enter your username (no spaces) "<<endl;
        cin >> user;
+       system("clear");
        cout << "                               Loding user...              "<<endl;
-       cout << "       Loding world       "<<endl;
+       sleep(5);
+       system("clear");
+       cout << "                               Loding world...                 "<<endl;
+       sleep(10);
+       system("clear");
 
 
 
