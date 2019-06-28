@@ -8,17 +8,16 @@
 using namespace std;
 
 
+void intro();
+
+
+
 int main()
 {    
       string user = "";
-      
+intro();      
 
-
-       cout << "/                                           \\ "<<endl; 
-       cout << "/                      Forest  Quest        \\  "<<endl;
-       cout << "/                                           \\  "<<endl;
-       cout << "/                                           \\  "<<endl;
-       cout << " please enter your username (no spaces) "<<endl;
+           cout << " please enter your username (no spaces) "<<endl;
        cin >> user;
        system("clear");
        cout << "                               Loding user...              "<<endl;
@@ -27,6 +26,7 @@ int main()
        cout << "                               Loding world...                 "<<endl;
        sleep(10);
        system("clear");
+       cout << "Hi, " + user + "!"<<endl;
 
 
 
@@ -37,7 +37,15 @@ int main()
 
 }//end main        
   
-      
+       
+
+void intro()
+{
+       cout << "/                                           \\ "<<endl; 
+       cout << "/                      Forest  Quest        \\  "<<endl;
+       cout << "/                                           \\  "<<endl;
+       cout << "/                                           \\  "<<endl;
+} 
  
  
  
