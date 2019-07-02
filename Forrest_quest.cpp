@@ -14,6 +14,7 @@ void loadI();
 void loadII();
 void greetuser(string);
 void ask();
+void i();
 
 int main()
 {     
@@ -26,15 +27,29 @@ int main()
 		loadII();
 		greetuser(user);
 		ask();
-}//end main        
+}//end main
+void i()
+{
+
+}
 void ask()
 {
+
+      string yy = "";
+   	  string y = "y";     
+	  string n = "n";
+	  string nn = "";
       cout << "Are you new to Forrest Quest? [y/n]"<<endl;
-	  cin >> yy;
-	  if (y == yy)
+	  cin >> nn;
+	  if (n == nn)
 	  {
 			  cout << "Ok then, you already know the rules, how to play,etc. Let's get started!"<<endl;
+			  //start program(program())
       }
+	  else
+	  {
+          i();//new function that tells you rules
+	  }
 }
 
 void intro()
