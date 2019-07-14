@@ -34,9 +34,6 @@ void i()
 }
 void ask()
 {
-
-      string yy = "";
-   	  string y = "y";     
 	  string n = "n";
 	  string nn = "";
       cout << "Are you new to Forrest Quest? [y/n]"<<endl;
