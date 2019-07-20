@@ -19,7 +19,7 @@ void ask();
 void i();
 bool validuser(string);
 void saveuser(string);
-string redo(string);
+string getandvalidateuser(string);
 
 int main()
 {     
@@ -29,17 +29,16 @@ int main()
 
 
 
+poop
 
 
 
 
 
 		intro();      
-		user = getuser(user);
 		loadI();
 		loadII();
-		validuser(user);
-		user = redo(user);
+		user = getandvalidateuser(user);
 		greetuser(user);
 		ask();
 		saveuser(user);
@@ -84,6 +83,10 @@ void intro()
 		cout << "/              Forest  Quest        \\  "<<endl;
 		cout << "/     The #1 Forest adventure game  \\  "<<endl;
 		cout << "/                                   \\  "<<endl;
+		cout << "/       Press enter to continue     \\  "<<endl;
+//		cin.ignore();
+		cin.get();
+		cin.clear();
 } 
 
 string getuser(string poopypants) 
@@ -114,7 +117,7 @@ void greetuser(string user)
 		cout << "Hi, " + user + "!"<<endl;
 
 }
-bool validuser(string user)
+bool validuser (string user)
 {
 		ifstream file ("Users.txt");
 		string line;
@@ -125,7 +128,6 @@ bool validuser(string user)
 				{
 						if (line == user)
 						{
-								cout << "User " << user << " Taken"<<endl;
 								return false;
 
 						}
@@ -146,12 +148,13 @@ void saveuser(string user)
 		file.close();
 }
 
-string redo(string user)
+string getandvalidateuser(string user)
 {
+		user = getuser(user);
 		while(!validuser(user))
 		{
 				cout << "User Taken. please Re-Enter A New Username\n";	
-        		user = getuser(user);
+				user = getuser(user);
 		}
 		return user;
 }
