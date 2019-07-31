@@ -26,10 +26,12 @@ int main()
 		string user = "";
 		string y = "y";
 		string yy = "";
+		string yyy = "";
 
 
 
-poop
+
+
 
 
 
@@ -92,6 +94,16 @@ void intro()
 string getuser(string poopypants) 
 {
 
+        string yyyy = "y";
+		string yyy = "";
+        cout <<"Would you like to sign up for Forrest quest?y/n"<<endl;
+        cin >> yyy;
+		if(yyy == yyyy)
+		{
+                cout<< "Please enter a valid username(no spaces)"<<endl;
+				cin >> poopypants;
+				return poopypants;
+		}
 		cout << " please enter your username (no spaces) "<<endl;
 		cin >> poopypants;
 		return poopypants;
@@ -137,6 +149,7 @@ bool validuser (string user)
 		{
 				system("clear");
 				cout <<"Something Went Wrong. Please Restart The Game\n";
+				return false;
 		}//end else
 		return true;
 }//end function
