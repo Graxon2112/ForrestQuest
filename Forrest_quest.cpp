@@ -114,14 +114,14 @@ void loadI()
 {
 		system("clear");
 		cout << "                               Loding user...     	         "<<endl;
-		//        sleep(5);
+		        sleep(5);
 }	
 
 void loadII()
 {
 		system("clear");
 		cout << "                               Loding world...                 "<<endl;
-		//        sleep(10);
+		        sleep(10);
 		system("clear");
 }	
 void greetuser(string user)
